@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Input</title>
+</head>
+<body style="background-color: antiquewhite;">
+    <h1 style=" text-align: center; font-family: Arial, sans-serif;">Ask a Question</h1>
+
+    <form style=" text-align: center; font-family: Arial, sans-serif;" method="post">
+        {% csrf_token %}
+        <div style="margin: 3%;">
+           <label  for="name">Name:</label>
+           <input type="text" id="name" name="name" required><br>
+       </div>
+        <div style="margin: 3%;">
+          <label for="question">Question:</label>
+           <textarea style="background-color: aquamarine;" id="question" name="question" rows="4" cols="50" required></textarea><br>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
