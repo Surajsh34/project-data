@@ -6,7 +6,7 @@ from .utill.gsheets import  read_a_spreadsheet
 
 
 # Create your views here.
-openai.api_key = "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"
+openai.api_key = "{Your Key}"
 
 
 def question_form(request):
